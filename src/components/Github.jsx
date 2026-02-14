@@ -1,6 +1,6 @@
 import React from 'react'
 import githubData from "../../assets/github.json"
-import MacWindow from './windows/macWindows'
+import MacWindow from './windows/MacWindows'
 import "./github.scss"
 
 const GitCard = ({ data = { id: 1, image: "", title: "", description: "", tags: [], repoLink: "", demoLink: "" } }) => {

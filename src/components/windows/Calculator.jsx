@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./calculator.scss";
-import MacWindow from "./macWindows";
+import MacWindow from "./MacWindows";
 
 
 const buttons = [
