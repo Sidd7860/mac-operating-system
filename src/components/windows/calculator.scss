@@ -1,0 +1,75 @@
+.calculator {
+  display: flex;
+  flex-direction: column;
+  height: 100%; // MacWindow ke main-content ko pura bharega
+  width: 100%;
+  background-color: #000;
+  padding: 15px;
+  box-sizing: border-box;
+  user-select: none;
+
+  .display {
+    flex: 0 0 25%; // Display area ko 25% height di hai
+    color: white;
+    font-size: clamp(1.8rem, 6vw, 3rem); // Font automatically adjust hoga
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px 15px;
+    font-weight: 200;
+    word-break: break-all;
+  }
+
+  .buttons {
+    flex: 1; // Bacha hua 75% space grid ko milega
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); // 4 columns
+    grid-template-rows: repeat(5, 1fr);    // 5 rows
+    grid-gap: 10px; // Buttons ke beech ka gap
+    padding-top: 10px;
+  }
+
+  .btn {
+    border: none;
+    background: #333; // Default grey numbers ke liye
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 50%; // Perfect circle
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 0.1s;
+    
+    // Circle maintain karne ke liye responsive sizing
+    width: 100%;
+    height: 100%;
+    max-width: 55px; 
+    max-height: 55px;
+    margin: auto;
+
+    &:active {
+      filter: brightness(1.5); // Click par glow karega
+    }
+
+    // AC, +/-, % ke liye light grey (Optional Mac style)
+    &:nth-child(-n+3) {
+      background-color: #a6a6a6;
+      color: #000;
+    }
+
+    &.operator {
+      background-color: #ff9500; // Orange color operators ke liye
+      color: white;
+      border-radius: 50%; // Apple style circular operators
+    }
+
+    &.zero {
+      grid-column: span 2; // '0' button do column lega
+      border-radius: 30px; // Pill shape
+      max-width: 100%; // Span ki wajah se width badh jayegi
+      justify-content: flex-start;
+      padding-left: 20px;
+    }
+  }
+}

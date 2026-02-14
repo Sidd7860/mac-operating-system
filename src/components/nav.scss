@@ -1,0 +1,57 @@
+nav {
+  width: 100%;
+  color: white; // Ye font ko white rakhega
+  padding-inline: 0.75rem;
+  padding-block: 0.4rem; 
+  background-color: rgba(151, 151, 151, 0.311);
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  
+  // Font size thoda bada karne ke liye (Mac style)
+  font-size: 14px; 
+  font-weight: 400;
+  font-family: system-ui, -apple-system, sans-serif;
+
+  .left, .right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  // Icons ke liye special setting
+  .nav-icon, .apple-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+      width: 16px;  // Icon size perfect chota
+      height: 16px;
+      object-fit: contain;
+      
+      /* MAGIC LINE: Sirf icons ko white karega, text ko nahi */
+      filter: brightness(0) invert(1); 
+      
+      transition: opacity 0.2s;
+    }
+
+    &:hover img {
+      opacity: 0.7;
+    }
+  }
+
+  // Apple logo ko thoda bada rakhne ke liye
+  .apple-icon img {
+    width: 18px;
+    height: 18px;
+  }
+
+  // Text (P tags) ke liye
+  p {
+    margin: 0;
+    padding: 0;
+    color: white; // Explicitly white
+  }
+}

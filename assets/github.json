@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1000",
+    "title": "Scheds - Course Schedule Generator",
+    "description": "Zibran's top project: A comprehensive course schedule generator built with ASP.NET Core MVC to manage academic timelines efficiently.",
+    "tags": ["ASP.NET Core", "C#", "SQL Server", "Bootstrap"],
+    "repoLink": "https://github.com/zibran-ahmed/scheds",
+    "demoLink": "https://zibran-scheds.netlify.app/"
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
+    "title": "FinTrack - Personal Dashboard",
+    "description": "A real-time finance tracker created by Zibran Ahmed that visualizes spending habits using interactive React charts.",
+    "tags": ["React", "TypeScript", "Chart.js", "Node.js"],
+    "repoLink": "https://github.com/zibran-ahmed/fintrack",
+    "demoLink": "https://zibran-fintrack.vercel.app/"
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=1000",
+    "title": "SecureAuth - Identity Service",
+    "description": "Robust backend authentication service featuring JWT and OAuth2 integration, developed as part of Zibran's backend portfolio.",
+    "tags": ["Python", "Django", "PostgreSQL", "Docker", "JWT"],
+    "repoLink": "https://github.com/zibran-ahmed/secure-auth",
+    "demoLink": null
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1000",
+    "title": "ChatStream - Messaging App",
+    "description": "Zibran's real-time messaging application optimized for low latency using Socket.io and Firebase.",
+    "tags": ["Vue.js", "Firebase", "Tailwind CSS", "Socket.io"],
+    "repoLink": "https://github.com/zibran-ahmed/chatstream",
+    "demoLink": "https://zibran-chat.vercel.app/"
+  }
+]
