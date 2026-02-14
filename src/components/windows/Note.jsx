@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react'
 import Markdown from 'react-markdown'
-import MacWindow from './macWindows'
+import MacWindow from './MacWindows'
 import "./note.scss"
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs'                        

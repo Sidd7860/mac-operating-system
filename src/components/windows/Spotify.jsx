@@ -1,5 +1,5 @@
 import React from 'react'
-import MacWindow from './macWindows'
+import MacWindow from './MacWindows'
 import "./spotify.scss"
 const Spotify = () => {
   return (
