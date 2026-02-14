@@ -7,7 +7,7 @@ import Note from './components/windows/Note'
 import Resume from './components/windows/Resume'
 import Spotify from './components/windows/Spotify'
 import Calculator from './components/windows/Calculator'
-import Cli from './components/windows/cli'
+import Cli from './components/windows/Cli'
 import { github } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 
 function App() {
